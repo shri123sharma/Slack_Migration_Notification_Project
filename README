@@ -1,0 +1,67 @@
+# Slack_Migration_Notification_Project
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Running the Server](#running-the-server)
+5. [Environment Variables](#environment-variables)
+6. [Testing](#testing)
+7. [License](#license)
+
+---
+
+## Introduction
+
+This project is a Django-based web application designed to automate migration notifications to Slack channels. It leverages Django's ORM and migration framework to track database changes and sends real-time notifications to specified Slack workspaces. 
+
+---
+
+## Prerequisites
+
+Ensure you have the following installed before proceeding:
+
+1. [Python 3.x](https://www.python.org/downloads/)
+2. [pip](https://pip.pypa.io/en/stable/) (Python package installer)
+3. [Virtualenv](https://virtualenv.pypa.io/en/stable/) (recommended for isolated Python environments)
+4. [Git](https://git-scm.com/) (for version control)
+
+---
+
+## Installation
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/shri123sharma/Slack_Migration_Notification_Project.git
+```
+
+### Step 2: Set Up a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Configure Environment Variables
+```bash
+cp .env.example .env
+```
+
+### Step 5: Apply Migrations
+```bash
+python manage.py migrate
+```
+
+### Step 6: Start the Development Server
+```bash
+python manage.py runserver
+```
+
+The server will start at http://127.0.0.1:8000/ by default. Open this URL in your web browser to access the app.
+
+
